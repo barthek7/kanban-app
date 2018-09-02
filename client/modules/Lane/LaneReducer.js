@@ -35,6 +35,6 @@ export default function lanes(state = initialState, action) {
       });
 
     default:
-      return lane;
+      return state;
     }
 };

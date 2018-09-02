@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './Note.css';
 
 const Note = props =>
@@ -6,6 +7,6 @@ const Note = props =>
 
 Note.propTypes = {
   children: PropTypes.any,
-};
+}; 
 
 export default Note;

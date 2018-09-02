@@ -1,4 +1,5 @@
 import uuid from 'uuid';
+import callApi from '../../util/apiCaller';
 
 // Export Constants
 export const CREATE_LANE = 'CREATE_LANE';
@@ -30,3 +31,11 @@ export function deleteLane(laneId) {
         laneId,
     };
 }
+
+/* export function fetchLanes() {
+    return (dispatch) => {
+      return callApi('lanes').then(res => {
+        dispatch(createLanes(res.lanes));
+      });
+    };
+  } */
